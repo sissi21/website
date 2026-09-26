@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { cvData } from '../data/cv';
+
+import Navbar from '../components/Navbar.svelte';
+import HeroHeader from '../components/HeroHeader.svelte';
+import SummaryCard from '../components/SummaryCard.svelte';
+import ExperienceSection from '../components/ExperienceSection.svelte';
+import SkillsSection from '../components/SkillsSection.svelte';
+import EducationSection from '../components/EducationSection.svelte';
+import CertificationsSection from '../components/CertificationsSection.svelte';
+import LanguagesSection from '../components/LanguagesSection.svelte';
+import ContactSection from '../components/ContactSection.svelte';
+import Footer from '../components/Footer.svelte';
+---
+
+<Layout
+  title={`${cvData.header.name} | ${cvData.header.title}`}
+  description="Executive CV of Luisa Cerrato, Project Manager with Google Search Ads experience, EDHEC highest-GPA student, and predictive analytics consulting with Alstom."
+>
+  <div id="top" class="min-h-screen flex flex-col">
+    <!-- Sticky Navigation Bar -->
+    <Navbar client:load />
+
+    <main class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      <!-- Hero / Header Section -->
+      <HeroHeader contact={cvData.header} client:load />
+
+      <!-- Asymmetric 2-Column Responsive Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Main Column (~65% width / 7-8 columns on large screens) -->
+        <div class="lg:col-span-7 xl:col-span-8 space-y-8">
+          <SummaryCard summary={cvData.summary} client:visible />
+          <ExperienceSection experiences={cvData.experience} client:visible />
+        </div>
+
+        <!-- Sidebar Column (~35% width / 4-5 columns on large screens) -->
+        <div class="lg:col-span-5 xl:col-span-4 space-y-8">
+          <SkillsSection skills={cvData.skills} client:visible />
+          <EducationSection education={cvData.education} client:visible />
+          <CertificationsSection certifications={cvData.certifications} client:visible />
+          <LanguagesSection languages={cvData.languages} client:visible />
+        </div>
+      </div>
+
+      <!-- Full-Width Bottom Contact Card -->
+      <ContactSection contact={cvData.header} client:visible />
+    </main>
+
+    <!-- Footer -->
+    <Footer contact={cvData.header} client:visible />
+  </div>
+</Layout>
