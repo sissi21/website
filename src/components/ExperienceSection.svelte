@@ -24,10 +24,10 @@
   }
 </script>
 
-<section id="experience" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm">
-  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
+<section id="experience" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm transition hover:shadow-md/50">
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 border-b border-slate-100 pb-4 mb-6">
     <div class="flex items-center gap-3">
-      <div class="w-2.5 h-6 bg-slate-900 rounded-full"></div>
+      <div class="w-2.5 h-6 bg-slate-900 rounded-full shrink-0"></div>
       <h2 class="text-xl sm:text-2xl font-serif-heading font-bold text-slate-900 tracking-wide uppercase">
         Work Experience
       </h2>
@@ -38,55 +38,55 @@
       <button
         type="button"
         on:click={() => activeFilter = 'All'}
-        class="px-3 py-1 rounded-full font-medium transition cursor-pointer {activeFilter === 'All' ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
+        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'All' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
       >
         All ({experiences.length})
       </button>
       <button
         type="button"
         on:click={() => activeFilter = 'Google'}
-        class="px-3 py-1 rounded-full font-medium transition cursor-pointer {activeFilter === 'Google' ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
+        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'Google' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
       >
         Google via Vaco
       </button>
       <button
         type="button"
         on:click={() => activeFilter = 'Analytics'}
-        class="px-3 py-1 rounded-full font-medium transition cursor-pointer {activeFilter === 'Analytics' ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
+        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'Analytics' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
       >
         Alstom Consulting
       </button>
       <button
         type="button"
         on:click={() => activeFilter = 'Leadership'}
-        class="px-3 py-1 rounded-full font-medium transition cursor-pointer {activeFilter === 'Leadership' ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
+        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'Leadership' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
       >
-        Team Leadership
+        Leadership
       </button>
     </div>
   </div>
 
-  <!-- Timeline Container -->
-  <div class="relative pl-6 sm:pl-8 border-l-2 border-slate-200 space-y-10 my-4">
+  <!-- Timeline Container with Mathematically Centered Markers -->
+  <div class="relative ml-1 sm:ml-2 pl-6 sm:pl-8 border-l-2 border-slate-200 space-y-9 my-4">
     {#each filteredExperiences as exp (exp.id)}
       <div class="relative group break-inside-avoid">
-        <!-- Timeline Marker Dot -->
-        <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-slate-900 bg-white group-hover:bg-slate-900 transition shadow-xs"></div>
+        <!-- Timeline Marker Dot precisely centered on the 2px left border -->
+        <div class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full border-2 border-slate-900 bg-white group-hover:bg-slate-900 transition shadow-2xs"></div>
 
         <!-- Role Header Card -->
-        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1.5 mb-2">
-          <div>
-            <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-slate-700 transition">
+        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-2">
+          <div class="min-w-0 flex-1">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-slate-800 transition leading-snug">
               {exp.role}
             </h3>
-            <div class="flex flex-wrap items-center gap-2 text-sm mt-0.5">
+            <div class="flex flex-wrap items-center gap-2 text-sm mt-1">
               {#if exp.company}
-                <span class="font-semibold text-slate-800 bg-slate-100 px-2 py-0.5 rounded text-xs border border-slate-200">
+                <span class="font-semibold text-slate-800 bg-slate-100 px-2.5 py-0.5 rounded text-xs border border-slate-200/80">
                   {exp.company}
                 </span>
               {/if}
               <span class="text-slate-500 text-xs flex items-center gap-1">
-                <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -96,12 +96,12 @@
           </div>
 
           <!-- Date Badge -->
-          <div class="flex items-center gap-1.5 self-start shrink-0 mt-1 sm:mt-0">
-            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200/80">
+          <div class="flex items-center gap-1.5 self-start shrink-0 mt-0.5 sm:mt-0">
+            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200/80 whitespace-nowrap">
               {exp.period}
             </span>
             {#if exp.isOngoing}
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 whitespace-nowrap">
                 Active
               </span>
             {/if}

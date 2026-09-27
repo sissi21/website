@@ -3,7 +3,7 @@
   "name": "luisa-cerrato-cv",
   "compatibility_date": "2025-04-24",
   "assets": {
-    "directory": "./dist/",
+    "directory": "./dist/"
   },
   "observability": {
     "enabled": true
