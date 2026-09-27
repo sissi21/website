@@ -6,7 +6,7 @@
   let copied = false;
 
   function copyAll() {
-    const text = `Luisa Cerrato - ${contact.title}\nEmail: ${contact.email}\nPhone: ${contact.phone}\nLocation: ${contact.location}\nLinkedIn: ${contact.linkedInUrl}\nPortfolio: ${contact.boldUrl}`;
+    const text = `Luisa Cerrato - ${contact.title}\nEmail: ${contact.email}\nLocation: ${contact.location}\nLinkedIn: ${contact.linkedInUrl}\nPortfolio: ${contact.boldUrl}`;
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       navigator.clipboard.writeText(text);
       copied = true;
@@ -21,8 +21,7 @@ N:Cerrato;Luisa;;;
 FN:Luisa Cerrato
 TITLE:${contact.title}
 EMAIL;TYPE=INTERNET,HOME:${contact.email}
-TEL;TYPE=CELL:${contact.phone}
-ADR;TYPE=HOME:;;8810;Horgen;;;Switzerland
+ADR;TYPE=HOME:;;;Zürich;;;Switzerland
 URL:${contact.boldUrl}
 URL;TYPE=LinkedIn:${contact.linkedInUrl}
 END:VCARD`;
@@ -42,7 +41,7 @@ END:VCARD`;
   <!-- Subtle background glow -->
   <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-slate-800 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
-  <div class="relative z-10 max-w-3xl">
+  <div class="relative z-10 w-full">
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold mb-4 border border-slate-700">
       <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
       Available for Opportunities & Advisory
@@ -51,12 +50,12 @@ END:VCARD`;
     <h2 class="text-2xl sm:text-3xl font-serif-heading font-bold text-white tracking-wide">
       Let's Connect & Collaborate
     </h2>
-    <p class="text-slate-300 text-sm sm:text-base mt-2 leading-relaxed">
+    <p class="text-slate-300 text-sm sm:text-base mt-2 leading-relaxed max-w-2xl">
       Interested in discussing Project & Program Management, Ads Quality operations, or predictive data initiatives? Feel free to reach out directly.
     </p>
 
-    <!-- Contact Grid -->
-    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <!-- Contact Grid: 4 Symmetrical Cards -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <!-- Email Box -->
       <a
         href="mailto:{contact.email}"
@@ -67,25 +66,9 @@ END:VCARD`;
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
         </div>
-        <div class="overflow-hidden">
+        <div class="overflow-hidden min-w-0">
           <div class="text-xs text-slate-400 font-medium">Email Address</div>
           <div class="text-sm font-semibold text-white truncate">{contact.email}</div>
-        </div>
-      </a>
-
-      <!-- Phone Box -->
-      <a
-        href="tel:{contact.phone}"
-        class="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 transition group"
-      >
-        <div class="w-10 h-10 rounded-lg bg-slate-700 flex items-center justify-center text-slate-300 group-hover:text-white transition shrink-0">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg>
-        </div>
-        <div>
-          <div class="text-xs text-slate-400 font-medium">Direct Phone</div>
-          <div class="text-sm font-semibold text-white">{contact.phone}</div>
         </div>
       </a>
 
@@ -101,9 +84,27 @@ END:VCARD`;
             <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.44 1.44 0 1 0 0-2.88 1.44 1.44 0 0 0 0 2.88M7.86 18.5v-8.37H5.06v8.37h2.8z"/>
           </svg>
         </div>
-        <div class="overflow-hidden">
+        <div class="overflow-hidden min-w-0">
           <div class="text-xs text-slate-400 font-medium">LinkedIn Profile</div>
           <div class="text-sm font-semibold text-white truncate">{contact.linkedIn}</div>
+        </div>
+      </a>
+
+      <!-- Portfolio Box -->
+      <a
+        href={contact.boldUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 transition group"
+      >
+        <div class="w-10 h-10 rounded-lg bg-emerald-600/20 text-emerald-400 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </div>
+        <div class="overflow-hidden min-w-0">
+          <div class="text-xs text-slate-400 font-medium">Portfolio Profile</div>
+          <div class="text-sm font-semibold text-white truncate">{contact.boldProfile}</div>
         </div>
       </a>
 
@@ -115,9 +116,9 @@ END:VCARD`;
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
         </div>
-        <div>
+        <div class="overflow-hidden min-w-0">
           <div class="text-xs text-slate-400 font-medium">Location</div>
-          <div class="text-sm font-semibold text-white">{contact.location}</div>
+          <div class="text-sm font-semibold text-white truncate">{contact.location}</div>
         </div>
       </div>
     </div>

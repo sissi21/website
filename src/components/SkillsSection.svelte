@@ -8,11 +8,11 @@
   let activeTab: 'all' | 'core' | 'tools' | 'strengths' = 'all';
 </script>
 
-<section id="skills" class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-sm break-inside-avoid">
-  <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-5">
-    <div class="flex items-center gap-2.5">
-      <div class="w-2 h-5 bg-slate-900 rounded-full"></div>
-      <h2 class="text-lg sm:text-xl font-serif-heading font-bold text-slate-900 tracking-wide uppercase">
+<section id="skills" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm break-inside-avoid">
+  <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+    <div class="flex items-center gap-3">
+      <div class="w-2.5 h-6 bg-slate-900 rounded-full"></div>
+      <h2 class="text-xl sm:text-2xl font-serif-heading font-bold text-slate-900 tracking-wide uppercase">
         Skills & Expertise
       </h2>
     </div>

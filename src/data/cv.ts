@@ -2,7 +2,6 @@ export interface ContactInfo {
   name: string;
   title: string;
   email: string;
-  phone: string;
   location: string;
   boldProfile: string;
   boldUrl: string;
@@ -60,8 +59,7 @@ export const cvData: CVData = {
     name: "Luisa Cerrato",
     title: "Project Manager",
     email: "cerrato.lu@gmail.com",
-    phone: "0765250662",
-    location: "8810, Horgen Switzerland",
+    location: "Zürich, Switzerland",
     boldProfile: "bold.pro/my/luisa-cerrato",
     boldUrl: "https://bold.pro/my/luisa-cerrato",
     linkedIn: "linkedin.com/in/luisacerrato",
