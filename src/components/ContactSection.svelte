@@ -29,8 +29,10 @@
 </script>
 
 <section id="contact" class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 lg:p-9 shadow-lg relative overflow-hidden break-inside-avoid">
-  <!-- Subtle decorative ambient glow -->
-  <div class="absolute -bottom-16 -right-16 w-56 h-56 bg-slate-800 rounded-full blur-2xl opacity-40 pointer-events-none no-print"></div>
+  <!-- Subtle decorative ambient glow wrapped inside inset container -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-2xl no-print">
+    <div class="absolute -bottom-10 -right-10 w-56 h-56 bg-slate-800 rounded-full blur-2xl opacity-40"></div>
+  </div>
 
   <div class="relative z-10 w-full">
     <!-- Active status pill -->

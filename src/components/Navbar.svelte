@@ -9,11 +9,6 @@
     isMobileOpen = false;
   }
 
-  function handlePrint() {
-    if (typeof window !== 'undefined') {
-      window.print();
-    }
-  }
 </script>
 
 <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 no-print transition-all shadow-2xs">
@@ -46,17 +41,6 @@
 
       <!-- Actions / CTAs -->
       <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
-        <button
-          on:click={handlePrint}
-          type="button"
-          class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200/80 transition cursor-pointer shadow-2xs"
-          title="Print or Save CV as PDF"
-        >
-          <svg class="w-3.5 h-3.5 text-slate-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-          </svg>
-          <span class="whitespace-nowrap">Print / PDF</span>
-        </button>
 
         <a
           href="mailto:cerrato.lu@gmail.com"
@@ -110,15 +94,6 @@
           </svg>
           <span>Get in Touch</span>
         </a>
-        <button
-          on:click={() => { closeMobile(); handlePrint(); }}
-          class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition"
-        >
-          <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-          </svg>
-          <span>Print CV / Save PDF</span>
-        </button>
       </div>
     </div>
   {/if}

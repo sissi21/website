@@ -19,13 +19,6 @@
       <a href="mailto:{contact.email}" class="hover:text-slate-900 transition">
         Email
       </a>
-      <button
-        type="button"
-        on:click={() => typeof window !== 'undefined' && window.print()}
-        class="hover:text-slate-900 transition cursor-pointer"
-      >
-        Print / PDF
-      </button>
     </div>
 
     <div>

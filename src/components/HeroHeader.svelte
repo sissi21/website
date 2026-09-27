@@ -60,20 +60,6 @@
             {contact.title}
           </p>
         </div>
-
-        <!-- Print Action CTA (desktop) -->
-        <div class="hidden sm:flex items-center gap-2 no-print shrink-0">
-          <button
-            on:click={handlePrint}
-            type="button"
-            class="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200/80 transition shadow-2xs cursor-pointer"
-          >
-            <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-            </svg>
-            <span>Print / Save PDF</span>
-          </button>
-        </div>
       </div>
 
       <!-- Quick Contact Pills & Badges -->
