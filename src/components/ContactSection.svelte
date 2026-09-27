@@ -38,7 +38,7 @@
     <!-- Active status pill -->
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/90 text-slate-300 text-xs font-semibold mb-3.5 border border-slate-700/80 shadow-2xs">
       <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-      <span>Available for Opportunities & Advisory</span>
+      <span>Available for Opportunities</span>
     </div>
 
     <h2 class="text-2xl sm:text-3xl font-serif-heading font-bold text-white tracking-wide">

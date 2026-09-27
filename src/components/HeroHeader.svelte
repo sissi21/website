@@ -45,7 +45,7 @@
       </div>
       <div
         class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 ring-2 ring-white shadow-xs"
-        title="Available for Opportunities & Advisory"
+        title="Available for Opportunities"
       ></div>
     </div>
 
