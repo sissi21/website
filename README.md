@@ -1,6 +1,6 @@
 # Luisa Cerrato - Professional CV Website
 
-A responsive executive CV and portfolio website for **Luisa Cerrato**, Project Manager. Built with **Astro**, **Svelte 5**, and **Tailwind CSS v4**, inspired by the design and structure of [bold.pro/my/luisa-cerrato](https://bold.pro/my/luisa-cerrato).
+A responsive executive CV and portfolio website for **Luisa Cerrato**, Project Manager. Built with **Astro**, **Svelte 5**, and **Tailwind CSS v4**.
 
 The project is pre-configured for static asset deployment to **Cloudflare Pages / Workers** (matching the configuration patterns in `luca-on-the-web`).
 

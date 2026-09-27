@@ -13,9 +13,6 @@
     </div>
 
     <div class="flex items-center space-x-4">
-      <a href={contact.boldUrl} target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition">
-        Bold Portfolio
-      </a>
       <a href={contact.linkedInUrl} target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition">
         LinkedIn
       </a>

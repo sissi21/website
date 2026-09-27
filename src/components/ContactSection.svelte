@@ -6,7 +6,7 @@
   let copied = false;
 
   function copyAll() {
-    const text = `Luisa Cerrato - ${contact.title}\nEmail: ${contact.email}\nLocation: ${contact.location}\nLinkedIn: ${contact.linkedInUrl}\nPortfolio: ${contact.boldUrl}`;
+    const text = `Luisa Cerrato - ${contact.title}\nEmail: ${contact.email}\nLocation: ${contact.location}\nLinkedIn: ${contact.linkedInUrl}`;
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       navigator.clipboard.writeText(text);
       copied = true;
@@ -22,7 +22,6 @@ FN:Luisa Cerrato
 TITLE:${contact.title}
 EMAIL;TYPE=INTERNET,HOME:${contact.email}
 ADR;TYPE=HOME:;;;Zürich;;;Switzerland
-URL:${contact.boldUrl}
 URL;TYPE=LinkedIn:${contact.linkedInUrl}
 END:VCARD`;
 
@@ -54,8 +53,8 @@ END:VCARD`;
       Interested in discussing Project & Program Management, Ads Quality operations, or predictive data initiatives? Feel free to reach out directly.
     </p>
 
-    <!-- Contact Grid: 4 Symmetrical Cards -->
-    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <!-- Contact Grid: 3 Symmetrical Cards -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
       <!-- Email Box -->
       <a
         href="mailto:{contact.email}"
@@ -87,24 +86,6 @@ END:VCARD`;
         <div class="overflow-hidden min-w-0">
           <div class="text-xs text-slate-400 font-medium">LinkedIn Profile</div>
           <div class="text-sm font-semibold text-white truncate">{contact.linkedIn}</div>
-        </div>
-      </a>
-
-      <!-- Portfolio Box -->
-      <a
-        href={contact.boldUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 transition group"
-      >
-        <div class="w-10 h-10 rounded-lg bg-emerald-600/20 text-emerald-400 flex items-center justify-center shrink-0">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-        </div>
-        <div class="overflow-hidden min-w-0">
-          <div class="text-xs text-slate-400 font-medium">Portfolio Profile</div>
-          <div class="text-sm font-semibold text-white truncate">{contact.boldProfile}</div>
         </div>
       </a>
 

@@ -3,8 +3,6 @@ export interface ContactInfo {
   title: string;
   email: string;
   location: string;
-  boldProfile: string;
-  boldUrl: string;
   linkedIn: string;
   linkedInUrl: string;
   avatarUrl: string;
@@ -60,8 +58,6 @@ export const cvData: CVData = {
     title: "Project Manager",
     email: "cerrato.lu@gmail.com",
     location: "Zürich, Switzerland",
-    boldProfile: "bold.pro/my/luisa-cerrato",
-    boldUrl: "https://bold.pro/my/luisa-cerrato",
     linkedIn: "linkedin.com/in/luisacerrato",
     linkedInUrl: "https://linkedin.com/in/luisacerrato",
     avatarUrl: "/avatar.jpg"
@@ -94,7 +90,7 @@ export const cvData: CVData = {
       isOngoing: false,
       tag: "Predictive Analytics & Consulting",
       highlights: [
-        "Predictive Fleet Maintenance: Spearheaded the transition from reactive to predictive maintenance for Alstom train doors to resolve costly downtime. Led a team to build predictive models using Pandas and Support Vector Machines to forecast door failures across X trains and Y doors; integrated environmental telemetry (usage, weather, vibration) with financial-risk modeling to secure €5.5M in projected operational savings due to reduced delays and breakages over 8 years.",
+        "Predictive Fleet Maintenance: Spearheaded the transition from reactive to predictive maintenance for Alstom train doors to resolve costly downtime. Led a team to build predictive models using Pandas and Support Vector Machines to forecast door failures across 2.5M door openings events; integrated environmental telemetry (usage, weather, vibration) with financial-risk modeling to secure €5.5M in projected operational savings due to reduced delays and breakages over 8 years.",
         "Stakeholder Management: Built MS Excel performance dashboards, tracked project KPIs, risks, and progress, and facilitated weekly status and leadership reviews, translating technical findings into clear project updates, risks, and mitigation actions for executive client stakeholders."
       ]
     },
