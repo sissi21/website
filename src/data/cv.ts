@@ -104,7 +104,7 @@ export const cvData: CVData = {
       isOngoing: false,
       tag: "Google Team Leadership",
       highlights: [
-        "Leadership: Promoted to Team Captain, leading a 12-person team and coordinating priorities, deadlines, and dependencies across 500+ weekly deliverables.",
+        "Leadership: Promoted to Team Captain, leading a 12-person team and coordinating priorities, deadlines, and dependencies across 18k+ weekly deliverables.",
         "Performance: Monitored operational KPIs and performance trends, contributing to a 15% improvement in team performance within one month, measured by Google-defined KPIs, through structured tracking, feedback, and follow-up, helping the team rank #1 among the 10 teams working on the project.",
         "Improvement: Identified workflow inefficiencies and proactively drove process and guideline improvements that increased operational efficiency by 20%.",
         "Stakeholder Alignment: Collaborated with cross-functional stakeholders to clarify priorities, resolve operational issues, and align the team on deliverables, deadlines, quality standards, and policy requirements."
