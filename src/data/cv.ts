@@ -66,7 +66,7 @@ export interface CVData {
 export const cvData: CVData = {
   header: {
     name: "Luisa Cerrato",
-    title: "Program Manager",
+    title: "Project Manager",
     phone: "0765250662",
     email: "cerrato.lu@gmail.com",
     website: "luisacerrato.com",
@@ -77,7 +77,7 @@ export const cvData: CVData = {
     avatarUrl: "/avatar.jpg"
   },
   summary: [
-    "Program Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
+    "Project Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
     "Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC - recognized as the highest-GPA student in the cohort - and completed a high-impact consulting project with Alstom developing a machine-learning prototype for predictive maintenance.",
     "I have since continued building my project and program management experience through volunteer projects and the Google Project Management Professional Certificate, and I look forward to helping Google once again in delivering its mission."
   ],
@@ -85,7 +85,7 @@ export const cvData: CVData = {
     {
       label: "Team Leadership",
       value: "12-Person Team",
-      desc: "Coordinated 18k weekly deliverables across priorities",
+      desc: "Coordinated 18k+ weekly deliverables across priorities",
       icon: "users"
     },
     {
