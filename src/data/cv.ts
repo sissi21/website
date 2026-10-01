@@ -119,7 +119,7 @@ export const cvData: CVData = {
       tag: "Google Ads Quality",
       highlights: [
         "Ads Quality: Evaluated Search Ads content against Google policies and quality guidelines, applying detailed standards to ensure accuracy, relevance, and consistency.",
-        "Performance: Reviewed 300+ items daily while maintaining a 96% quality benchmark compared with a team median of 90.5%.",
+        "Performance: Reviewed 300+ tasks daily while maintaining a 96% quality benchmark compared with a team median of 90.5%.",
         "Progression: Recognized as Best Rater multiple times for consistently high quality and performance, leading to subsequent promotion to Team Captain."
       ]
     },
