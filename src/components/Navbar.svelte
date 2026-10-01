@@ -25,7 +25,7 @@
           </span>
         </a>
         <span class="hidden xl:inline-block px-2.5 py-0.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-full border border-slate-200 shrink-0">
-          Project Manager
+          Program Manager
         </span>
       </div>
 

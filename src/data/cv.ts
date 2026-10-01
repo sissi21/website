@@ -1,7 +1,10 @@
 export interface ContactInfo {
   name: string;
   title: string;
+  phone?: string;
   email: string;
+  website?: string;
+  websiteUrl?: string;
   location: string;
   linkedIn: string;
   linkedInUrl: string;
@@ -64,28 +67,31 @@ export const cvData: CVData = {
   header: {
     name: "Luisa Cerrato",
     title: "Program Manager",
+    phone: "0765250662",
     email: "cerrato.lu@gmail.com",
+    website: "luisacerrato.com",
+    websiteUrl: "https://luisacerrato.com",
     location: "Zürich, Switzerland",
     linkedIn: "linkedin.com/in/luisacerrato",
     linkedInUrl: "https://linkedin.com/in/luisacerrato",
     avatarUrl: "/avatar.jpg"
   },
   summary: [
-    "Program Manager with a proven track record supporting Google — via Vaco in Palo Alto, CA — on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
-    "Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC — awarded highest GPA in the cohort — and delivered a high-impact predictive maintenance initiative with Alstom projecting €5.5M in operational savings.",
-    "Further strengthened program management capabilities through volunteer initiatives and the Google Project Management Professional Certificate, ready to deliver measurable impact."
+    "Program Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
+    "Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC - recognized as the highest-GPA student in the cohort - and completed a high-impact consulting project with Alstom developing a machine-learning prototype for predictive maintenance.",
+    "I have since continued building my project and program management experience through volunteer projects and the Google Project Management Professional Certificate, and I look forward to helping Google once again in delivering its mission."
   ],
   summaryHighlights: [
     {
       label: "Team Leadership",
       value: "12-Person Team",
-      desc: "Coordinated 500+ weekly deliverables across priorities",
+      desc: "Coordinated 18k weekly deliverables across priorities",
       icon: "users"
     },
     {
       label: "Cost Optimization",
-      value: "€5.5M Savings",
-      desc: "Predictive maintenance algorithms deployed with Alstom",
+      value: "Up to €5.5M Savings",
+      desc: "Predictive maintenance algorithms with Alstom",
       icon: "trending"
     },
     {
@@ -107,40 +113,40 @@ export const cvData: CVData = {
       role: "Volunteer Project & Program Management",
       company: "Independent",
       location: "Zürich, Switzerland",
-      period: "2021 – Present",
-      isOngoing: true,
+      period: "2021 - 12/2025",
+      isOngoing: false,
       tag: "Leadership & Community",
       highlights: [
-        "Project Delivery: Delivered 10+ community initiatives and career-return workshops managing timelines, stakeholder coordination, deliverables, and operational requirements.",
-        "Partnerships: Managed sponsor acquisition and procurement for fundraising initiatives, including partnership negotiations, vendor coordination, and donor logistics.",
-        "Operations: Facilitated team meetings to align 8–10 internal and external stakeholders on priorities and next steps. Tracked deliverables and budget spend, and maintained project documentation."
+        "Project Delivery: Delivered 10+ career-return workshops and social events managing timelines, stakeholder coordination, deliverables, and operational requirements.",
+        "Project Coordination: Coordinated fundraising initiatives from planning through execution, managing sponsor engagement, procurement, vendor coordination, and donor logistics to ensure operational requirements and deadlines are met.",
+        "Operations: Facilitated team meetings to align 8–10 internal and external stakeholders on priorities and next steps. Track deliverables and budget spend, and maintain project documentation."
       ]
     },
     {
       id: "alstom",
-      role: "Project Management & Business Analytics – Master Consulting Project",
+      role: "Project Management & Business Analyst - Master Consulting Project",
       company: "Alstom",
       location: "Zürich, Switzerland",
-      period: "03/2022 – 06/2023",
+      period: "03/2022 - 06/2023",
       isOngoing: false,
       tag: "Predictive Analytics & Consulting",
       highlights: [
-        "Project Delivery & Predictive Maintenance: Contributed to a data-driven Prognostics Health Management (PHM) project for Alstom passenger train doors to reduce costly downtime and unplanned failures, coordinating project activities and supporting the development of a machine-learning predictive maintenance prototype using time-series analysis, regression, and clustering on 7,787 operational door cycles across 16 unique doors to identify potential failure patterns.",
-        "Business Case & Stakeholder Management: Developed a business case estimating €2.5M–€5.5M in potential maintenance savings over 8 years for a 99-train fleet. Tracked project KPIs, risks, mitigations, dependencies, and progress through Excel dashboards and regular reviews, translating technical and financial findings into clear recommendations for client stakeholders and leadership."
+        "Project Execution: Contributed to a data-driven Prognostics Health Management (PHM) project for Alstom passenger train doors to reduce costly downtime and failures, coordinating project activities and supporting the development of a machine-learning predictive maintenance prototype using time-series analysis, regression, and clustering on 7,787 operational door cycles across 16 unique doors to identify potential failure patterns.",
+        "Project Monitoring: Developed a business case estimating €2.5M–€5.5M in potential maintenance savings over 8 years for a 99-train fleet. Tracked project KPIs, risks, mitigations, dependencies, and progress through Excel dashboards and regular reviews, translating technical and financial findings into clear recommendations for client stakeholders and leadership."
       ]
     },
     {
       id: "google-captain",
       role: "Search Ads Team Captain",
       company: "Google via Vaco",
-      location: "Palo Alto, California, United States",
-      period: "06/2020 – 06/2021",
+      location: "Palo Alto, California",
+      period: "06/2020 - 06/2021",
       isOngoing: false,
       tag: "Google Team Leadership",
       highlights: [
-        "Leadership: Promoted to Team Captain, leading a 12-person team and coordinating priorities, deadlines, and dependencies across 18k+ weekly deliverables.",
-        "Performance: Monitored operational KPIs and performance trends, contributing to a 15% improvement in team performance within one month, measured by Google-defined KPIs, through structured tracking, feedback, and follow-up, helping the team rank #1 among the 10 teams working on the project.",
-        "Improvement: Identified workflow inefficiencies and proactively drove process and guideline improvements that increased operational efficiency by 20%.",
+        "Team Leadership: Promoted to Team Captain, leading a 12-person team and coordinating priorities, deadlines, and dependencies across 18k+ weekly deliverables.",
+        "Performance Monitoring: Monitored operational KPIs and performance trends, contributing to a 15% improvement in team performance within one month, measured by Google-defined KPIs, through structured tracking, feedback, and follow-up, helping the team rank #1 among the 10 teams working on the project.",
+        "Process Improvement: Identified workflow inefficiencies and proactively drove process and guideline improvements that increased operational efficiency by 20%.",
         "Stakeholder Alignment: Collaborated with cross-functional stakeholders to clarify priorities, resolve operational issues, and align the team on deliverables, deadlines, quality standards, and policy requirements."
       ]
     },
@@ -148,27 +154,27 @@ export const cvData: CVData = {
       id: "google-analyst",
       role: "Search Ads Content Analyst",
       company: "Google via Vaco",
-      location: "Palo Alto, California, United States",
-      period: "03/2020 – 06/2020",
+      location: "Palo Alto, California",
+      period: "03/2020 - 06/2020",
       isOngoing: false,
       tag: "Google Ads Quality",
       highlights: [
-        "Ads Quality: Evaluated Search Ads content against Google policies and quality guidelines, applying detailed standards to ensure accuracy, relevance, and consistency.",
-        "Performance: Reviewed 300+ tasks daily while maintaining a 96% quality benchmark compared with a team median of 90.5%.",
-        "Progression: Recognized as Best Rater multiple times for consistently high quality and performance, leading to subsequent promotion to Team Captain."
+        "Ads Quality Assurance: Evaluated Search Ads content against Google policies and quality guidelines, applying detailed standards to ensure accuracy, relevance, and consistency.",
+        "KPI Performance: Reviewed 300+ ads daily while maintaining a 96% quality benchmark compared with a team median of 90.5%.",
+        "Professional growth: Repeatedly recognized as Best Rater for consistently high quality and performance, leading to subsequent promotion to Team Captain."
       ]
     },
     {
       id: "career-break",
       role: "Career Break & Professional Development",
-      company: "Independent / Self-Directed",
+      company: "California, United States",
       location: "California, United States",
-      period: "08/2013 – 12/2019",
+      period: "08/2013 - 12/2019",
       isOngoing: false,
       tag: "Continuous Learning",
       highlights: [
-        "Relocation: Managed international relocation. Coordinated timelines, documentation, and cross-border needs. Achieved English fluency through immersion.",
-        "Development: Completed technical web-development courses to deepen my understanding of the tech workflow and tools and continued independent professional training, strengthening digital skills and maintaining professional development throughout the career break."
+        "Relocation Planning & Coordination: Managed international relocation. Coordinated timelines, documentation, and cross-border needs. Achieved English fluency through immersion.",
+        "Continuous Learning: Unable to work due to visa limitations, completed technical web-development courses to deepen my understanding of the tech workflow and tools and continued independent professional training, strengthening digital skills and maintaining professional development throughout the career break."
       ]
     },
     {
@@ -176,13 +182,13 @@ export const cvData: CVData = {
       role: "Investment Specialist",
       company: "Poste Italiane Spa",
       location: "Salerno, Italy",
-      period: "01/2012 – 07/2013",
+      period: "01/2012 - 07/2013",
       isOngoing: false,
       tag: "Financial Advisory",
       highlights: [
-        "Portfolio Management: Managed €100K in client portfolios monthly. Assessed risk profiles, objectives, and performance in a regulated financial environment.",
-        "Client Advisory: Advised clients on investment options and portfolio adjustments, addressing concerns and aligning recommendations with changing objectives and market conditions.",
-        "Executive Strategy: Prepared investment strategy proposals and growth presentations for senior leadership."
+        "Risk management: Managed €100K in client portfolios monthly. Assessed risk profiles, objectives, and performance in a regulated financial environment.",
+        "Stakeholder management: Advised clients on investment options and portfolio adjustments, addressing concerns and aligning recommendations with changing objectives and market conditions.",
+        "Executive communication: Prepared investment strategy proposals and growth presentations for senior leadership."
       ]
     }
   ],
@@ -206,7 +212,8 @@ export const cvData: CVData = {
       "MS Project",
       "MS Excel & Dashboards",
       "Jira",
-      "Asana"
+      "Asana",
+      "Basics of Python, HTML/CSS, SQL, Machine Learning"
     ],
     professionalStrengths: [
       "Analytical Thinking",
@@ -222,7 +229,7 @@ export const cvData: CVData = {
     {
       institution: "EDHEC Business School",
       degree: "Master's Degree: Data Management & Business Analytics",
-      honors: "Awarded Best Student Award - Top of cohort (Highest-GPA student)"
+      honors: "Awarded Best Student Award - Top of cohort"
     },
     {
       institution: "Bocconi University",

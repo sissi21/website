@@ -42,14 +42,14 @@
     </div>
 
     <h2 class="text-2xl sm:text-3xl font-serif-heading font-bold text-white tracking-wide">
-      Let's Connect & Collaborate
+      Let's Connect
     </h2>
     <p class="text-slate-300 text-sm sm:text-base mt-2 leading-relaxed max-w-2xl">
       Interested in discussing Project & Program Management, Ads Quality operations, or predictive data initiatives? Feel free to reach out directly.
     </p>
 
     <!-- Contact Grid (1 col on mobile, 2 col on tablet, 3 col on desktop) -->
-    <div class="mt-6 sm:mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+    <div class="mt-6 sm:mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-3.5 sm:gap-4">
       <!-- Email Box -->
       <a
         href="mailto:{contact.email}"
@@ -86,44 +86,6 @@
         </div>
       </a>
 
-      <!-- Location Box -->
-      <div class="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/90 border border-slate-700/80 min-w-0 sm:col-span-2 lg:col-span-1">
-        <div class="w-10 h-10 rounded-lg bg-slate-700 flex items-center justify-center text-slate-300 shrink-0 shadow-2xs">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-        </div>
-        <div class="overflow-hidden min-w-0 flex-1">
-          <div class="text-xs text-slate-400 font-medium">Location</div>
-          <div class="text-sm font-semibold text-white truncate mt-0.5">{contact.location}</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Actions (Copy all, Download vCard) -->
-    <div class="mt-6 pt-5 border-t border-slate-800 flex flex-wrap items-center gap-2.5 sm:gap-3 no-print">
-      <button
-        on:click={copyAll}
-        type="button"
-        class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 hover:text-white border border-slate-700 transition cursor-pointer shadow-2xs"
-      >
-        <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-        </svg>
-        <span>{copied ? '✓ Contact Info Copied!' : 'Copy Full Contact Info'}</span>
-      </button>
-
-      <button
-        on:click={downloadVCard}
-        type="button"
-        class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 hover:text-white border border-slate-700 transition cursor-pointer shadow-2xs"
-      >
-        <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-        </svg>
-        <span>Save Contact (.vcf)</span>
-      </button>
-    </div>
+    
   </div>
 </section>

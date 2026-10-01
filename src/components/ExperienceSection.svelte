@@ -33,37 +33,6 @@
       </h2>
     </div>
 
-    <!-- Filter Buttons (no-print) -->
-    <div class="flex flex-wrap items-center gap-1.5 no-print text-xs">
-      <button
-        type="button"
-        on:click={() => activeFilter = 'All'}
-        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'All' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
-      >
-        All ({experiences.length})
-      </button>
-      <button
-        type="button"
-        on:click={() => activeFilter = 'Google'}
-        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'Google' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
-      >
-        Google via Vaco
-      </button>
-      <button
-        type="button"
-        on:click={() => activeFilter = 'Analytics'}
-        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'Analytics' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
-      >
-        Alstom Consulting
-      </button>
-      <button
-        type="button"
-        on:click={() => activeFilter = 'Leadership'}
-        class="px-2.5 py-1 rounded-full font-semibold transition cursor-pointer {activeFilter === 'Leadership' ? 'bg-slate-900 text-white shadow-2xs' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}"
-      >
-        Leadership
-      </button>
-    </div>
   </div>
 
   <!-- Timeline Container with Mathematically Centered Markers -->
