@@ -40,15 +40,11 @@
 
   <!-- Narrative Summary -->
   <div class="space-y-4 text-slate-700 leading-relaxed text-sm sm:text-base">
-    <p>
-      Project Manager with a proven track record supporting <strong class="text-slate-900 font-semibold">Google</strong> — via Vaco in Palo Alto, CA — on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as <strong class="text-slate-900 font-semibold">Best Rater</strong> and promoted to <strong class="text-slate-900 font-semibold">Team Captain</strong>, leading a 12-person team to drive quality, efficiency, and process improvements.
-    </p>
-    <p>
-      Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from <strong class="text-slate-900 font-semibold">EDHEC</strong> (awarded highest GPA in the cohort) and delivered a high-impact predictive maintenance initiative with <strong class="text-slate-900 font-semibold">Alstom</strong> projecting €5.5M in operational savings.
-    </p>
-    <p class="text-slate-600 text-xs sm:text-sm italic pt-1 border-t border-slate-100/80">
-      Further strengthened program management capabilities through volunteer initiatives and the <strong class="text-slate-900 font-medium not-italic">Google Project Management Professional Certificate</strong>, ready to deliver measurable impact.
-    </p>
+    {#each summary as paragraph, index}
+      <p class={index === summary.length - 1 ? "text-slate-600 text-xs sm:text-sm italic pt-1 border-t border-slate-100/80" : ""}>
+        {paragraph}
+      </p>
+    {/each}
   </div>
 
   <!-- Key Highlight Metric Cards (Clean 2x2 grid with ample room) -->
