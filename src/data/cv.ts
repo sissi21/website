@@ -63,7 +63,7 @@ export const cvData: CVData = {
     avatarUrl: "/avatar.jpg"
   },
   summary: [
-    "Project Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements. Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC (recognized as the highest-GPA student in the cohort) and completed a high-impact consulting project with Alstom deploying predictive algorithms.",
+    "Project Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements. Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC - recognized as the highest-GPA student in the cohort - and completed a high-impact consulting project with Alstom developing a machine-learning prototype for predictive maintenance.",
     "I have since continued building my project and program management experience through volunteer projects and the Google Project Management Professional Certificate, and I look forward to helping Google once again in delivering its mission."
   ],
   experience: [
@@ -83,15 +83,15 @@ export const cvData: CVData = {
     },
     {
       id: "alstom",
-      role: "Project Manager & Business Analyst - Master Consulting Project",
+      role: "Project Management & Business Analytics – Master Consulting Project",
       company: "Alstom",
       location: "Zürich, Switzerland",
       period: "03/2022 – 06/2023",
       isOngoing: false,
       tag: "Predictive Analytics & Consulting",
       highlights: [
-        "Predictive Fleet Maintenance: Spearheaded the transition from reactive to predictive maintenance for Alstom train doors to resolve costly downtime. Led a team to build predictive models using Pandas and Support Vector Machines to forecast door failures across 2.5M door openings events; integrated environmental telemetry (usage, weather, vibration) with financial-risk modeling to secure €5.5M in projected operational savings due to reduced delays and breakages over 8 years.",
-        "Stakeholder Management: Built MS Excel performance dashboards, tracked project KPIs, risks, and progress, and facilitated weekly status and leadership reviews, translating technical findings into clear project updates, risks, and mitigation actions for executive client stakeholders."
+        "Project Delivery & Predictive Maintenance: Contributed to a data-driven Prognostics Health Management (PHM) project for Alstom passenger train doors to reduce costly downtime and unplanned failures, coordinating project activities and supporting the development of a machine-learning predictive maintenance prototype using time-series analysis, regression, and clustering on 7,787 operational door cycles across 16 unique doors to identify potential failure patterns.",
+        "Business Case & Stakeholder Management: Developed a business case estimating €2.5M–€5.5M in potential maintenance savings over 8 years for a 99-train fleet. Tracked project KPIs, risks, mitigations, dependencies, and progress through Excel dashboards and regular reviews, translating technical and financial findings into clear recommendations for client stakeholders and leadership."
       ]
     },
     {
