@@ -38,9 +38,17 @@ export interface LanguageItem {
   level: number; // 1 to 5
 }
 
+export interface SummaryHighlight {
+  label: string;
+  value: string;
+  desc: string;
+  icon: "users" | "trending" | "award" | "check";
+}
+
 export interface CVData {
   header: ContactInfo;
   summary: string[];
+  summaryHighlights: SummaryHighlight[];
   experience: ExperienceItem[];
   skills: {
     coreCompetencies: string[];
@@ -55,7 +63,7 @@ export interface CVData {
 export const cvData: CVData = {
   header: {
     name: "Luisa Cerrato",
-    title: "Project Manager",
+    title: "Program Manager",
     email: "cerrato.lu@gmail.com",
     location: "Zürich, Switzerland",
     linkedIn: "linkedin.com/in/luisacerrato",
@@ -63,9 +71,35 @@ export const cvData: CVData = {
     avatarUrl: "/avatar.jpg"
   },
   summary: [
-    "Project Manager with a proven track record supporting Google — via Vaco in Palo Alto, CA — on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
+    "Program Manager with a proven track record supporting Google — via Vaco in Palo Alto, CA — on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
     "Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC — awarded highest GPA in the cohort — and delivered a high-impact predictive maintenance initiative with Alstom projecting €5.5M in operational savings.",
     "Further strengthened program management capabilities through volunteer initiatives and the Google Project Management Professional Certificate, ready to deliver measurable impact."
+  ],
+  summaryHighlights: [
+    {
+      label: "Team Leadership",
+      value: "12-Person Team",
+      desc: "Coordinated 500+ weekly deliverables across priorities",
+      icon: "users"
+    },
+    {
+      label: "Cost Optimization",
+      value: "€5.5M Savings",
+      desc: "Predictive maintenance algorithms deployed with Alstom",
+      icon: "trending"
+    },
+    {
+      label: "Academic Honors",
+      value: "Highest GPA",
+      desc: "Best Student Award in Master's cohort at EDHEC",
+      icon: "award"
+    },
+    {
+      label: "Quality Benchmark",
+      value: "Best Rater",
+      desc: "96% Ads Quality standard achieved at Google / Vaco",
+      icon: "check"
+    }
   ],
   experience: [
     {

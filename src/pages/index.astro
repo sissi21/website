@@ -30,7 +30,7 @@ import Footer from '../components/Footer.svelte';
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-5 items-start">
         <!-- Main Column (About Profile + Work Experience) -->
         <div class="lg:col-span-7 flex flex-col gap-4 sm:gap-5 min-w-0">
-          <SummaryCard summary={cvData.summary} client:visible />
+          <SummaryCard summary={cvData.summary} highlights={cvData.summaryHighlights} client:visible />
           <ExperienceSection experiences={cvData.experience} client:visible />
         </div>
 

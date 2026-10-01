@@ -1,32 +1,6 @@
 <script lang="ts">
   export let summary: string[];
-
-  const highlights = [
-    {
-      label: "Team Leadership",
-      value: "12-Person Team",
-      desc: "Coordinated 500+ weekly deliverables across priorities",
-      icon: "users"
-    },
-    {
-      label: "Cost Optimization",
-      value: "€5.5M Savings",
-      desc: "Predictive maintenance algorithms deployed with Alstom",
-      icon: "trending"
-    },
-    {
-      label: "Academic Honors",
-      value: "Highest GPA",
-      desc: "Best Student Award in Master's cohort at EDHEC",
-      icon: "award"
-    },
-    {
-      label: "Quality Benchmark",
-      value: "Best Rater",
-      desc: "96% Ads Quality standard achieved at Google / Vaco",
-      icon: "check"
-    },
-  ];
+  export let highlights: { label: string; value: string; desc: string; icon: string }[];
 </script>
 
 <section id="about" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm transition hover:shadow-md/50">
