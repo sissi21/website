@@ -63,8 +63,9 @@ export const cvData: CVData = {
     avatarUrl: "/avatar.jpg"
   },
   summary: [
-    "Project Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements. Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC - recognized as the highest-GPA student in the cohort - and completed a high-impact consulting project with Alstom developing a machine-learning prototype for predictive maintenance.",
-    "I have since continued building my project and program management experience through volunteer projects and the Google Project Management Professional Certificate, and I look forward to helping Google once again in delivering its mission."
+    "Project Manager with a proven track record supporting Google — via Vaco in Palo Alto, CA — on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements."
+    "Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC (awarded highest GPA in the cohort) and completed a high-impact consulting project with Alstom developing a machine-learning prototype for predictive maintenance."
+    "Further strengthened program management capabilities through volunteer initiatives and the Google Project Management Professional Certificate, ready to deliver measurable impact."
   ],
   experience: [
     {
