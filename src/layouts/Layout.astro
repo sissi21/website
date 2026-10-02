@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title = "Luisa Cerrato",
-  description = "Executive CV & Portfolio of Luisa Cerrato, Program Manager with expertise supporting Google Search Ads, EDHEC highest GPA graduate, and Alstom predictive maintenance consulting."
+  description = "Professional profile of Luisa Cerrato, Program Manager with experience in project delivery, cross-functional coordination, Google Search Ads operations, and predictive analytics consulting with Alstom."
 } = Astro.props;
 ---
 
@@ -27,9 +27,9 @@ const {
     <meta name="theme-color" content="#0f172a" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Robots / Prevent Indexing -->
-    <meta name="robots" content="noindex, nofollow, noarchive" />
-    <meta name="googlebot" content="noindex, nofollow, noarchive" />
+    <!-- Search engine indexing -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
 
     <!-- Primary Meta Tags -->
     <title>{title}</title>
@@ -39,15 +39,17 @@ const {
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luisacerrato.com/" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/avatar.jpg" />
+    <meta property="og:image" content="https://luisacerrato.com/avatar.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="/avatar.jpg" />
+    <meta property="twitter:image" content="https://luisacerrato.com/avatar.jpg" />
+    <link rel="canonical" href="https://luisacerrato.com/" />
 
     <!-- Google Fonts: Volkhov (Serif) & Inter (Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
