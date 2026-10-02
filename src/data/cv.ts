@@ -113,7 +113,7 @@ export const cvData: CVData = {
       role: "Volunteer Project & Program Management",
       company: "Independent",
       location: "Zürich, Switzerland",
-      period: "2021 - 12/2025",
+      period: "08/2021 - 12/2025",
       isOngoing: false,
       tag: "Leadership & Community",
       highlights: [
