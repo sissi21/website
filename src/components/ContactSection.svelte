@@ -45,7 +45,7 @@
       Let's Connect
     </h2>
     <p class="text-slate-300 text-sm sm:text-base mt-2 leading-relaxed max-w-2xl">
-      Interested in discussing Project & Program Management, Ads Quality operations, or predictive data initiatives? Feel free to reach out directly.
+      Interested in discussing Project & Program Management, cross-functional delivery, operations, or data-driven initiatives? Feel free to reach out directly.
     </p>
 
     <!-- Contact Grid (1 col on mobile, 2 col on tablet, 3 col on desktop) -->
