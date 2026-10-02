@@ -32,7 +32,7 @@
   </div>
 
   <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-7 relative z-10">
-    <!-- Round Portrait Photo with Availability Pip -->
+    <!-- Round Portrait Photo -->
     <div class="relative shrink-0">
       <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full p-1 bg-white ring-2 ring-slate-200/90 shadow-sm overflow-hidden">
         <img
@@ -43,10 +43,6 @@
           on:error={handleImageError}
         />
       </div>
-      <div
-        class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 ring-2 ring-white shadow-xs"
-        title="Available for Opportunities"
-      ></div>
     </div>
 
     <!-- Text Information -->
