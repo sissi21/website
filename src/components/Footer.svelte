@@ -22,7 +22,7 @@
     </div>
 
     <div>
-      <span class="text-slate-400">© 2026 Luisa Cerrato • Executive CV</span>
+      <span class="text-slate-400">© 2026 Luisa Cerrato • Professional Profile</span>
     </div>
   </div>
 </footer>
