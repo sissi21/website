@@ -161,7 +161,7 @@ export const cvData: CVData = {
       highlights: [
         "Ads Quality Assurance: Evaluated Search Ads content against Google policies and quality guidelines, applying detailed standards to ensure accuracy, relevance, and consistency.",
         "KPI Performance: Reviewed 300+ ads daily while maintaining a 96% quality benchmark compared with a team median of 90.5%.",
-        "Professional growth: Repeatedly recognized as Best Rater for consistently high quality and performance, leading to subsequent promotion to Team Captain."
+        "Professional Growth: Repeatedly recognized as Best Rater for consistently high quality and performance, leading to subsequent promotion to Team Captain."
       ]
     },
     {
