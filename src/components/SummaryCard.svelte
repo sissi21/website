@@ -8,7 +8,7 @@
   <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-5">
     <div class="w-2.5 h-6 bg-slate-900 rounded-full"></div>
     <h2 class="text-xl sm:text-2xl font-serif-heading font-bold text-slate-900 tracking-wide uppercase">
-      Executive Profile
+      Professional Profile
     </h2>
   </div>
 
