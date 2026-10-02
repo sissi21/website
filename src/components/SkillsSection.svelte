@@ -82,7 +82,7 @@
         </h3>
         <div class="flex flex-wrap gap-1.5 sm:gap-2">
           {#each skills.technicalTools as tool}
-            <span class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-slate-900 text-white shadow-2xs hover:bg-slate-800 transition">
+            <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/90 text-slate-800 border border-slate-200/80 hover:bg-slate-200 transition">
               {tool}
             </span>
           {/each}
