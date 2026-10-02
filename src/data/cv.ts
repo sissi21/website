@@ -66,7 +66,7 @@ export interface CVData {
 export const cvData: CVData = {
   header: {
     name: "Luisa Cerrato",
-    title: "Project Manager",
+    title: "Program Manager",
     phone: "0765250662",
     email: "cerrato.lu@gmail.com",
     website: "luisacerrato.com",
@@ -77,7 +77,7 @@ export const cvData: CVData = {
     avatarUrl: "/avatar.jpg"
   },
   summary: [
-    "Project Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
+    "Program Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
     "Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC - recognized as the highest-GPA student in the cohort - and completed a high-impact consulting project with Alstom developing a machine-learning prototype for predictive maintenance.",
     "I have since continued building my project and program management experience through volunteer projects and the Google Project Management Professional Certificate, and I look forward to helping Google once again in delivering its mission."
   ],
@@ -118,8 +118,8 @@ export const cvData: CVData = {
       tag: "Leadership & Community",
       highlights: [
         "Project Delivery: Delivered 10+ career-return workshops and social events managing timelines, stakeholder coordination, deliverables, and operational requirements.",
-        "Project Coordination: Coordinated fundraising initiatives from planning through execution, managing sponsor engagement, procurement, vendor coordination, and donor logistics to ensure operational requirements and deadlines are met.",
-        "Operations: Facilitated team meetings to align 8–10 internal and external stakeholders on priorities and next steps. Track deliverables and budget spend, and maintain project documentation."
+        "Project Coordination: Coordinated fundraising initiatives from planning through execution, managing sponsor engagement, procurement, vendor coordination, and donor logistics to ensure operational requirements and deadlines were met.",
+        "Operations: Facilitated team meetings to align 8–10 internal and external stakeholders on priorities and next steps. Tracked deliverables and budget spend, and maintained project documentation."
       ]
     },
     {
@@ -152,7 +152,7 @@ export const cvData: CVData = {
     },
     {
       id: "google-analyst",
-      role: "Search Ads Content Analyst",
+      role: "Search Ads Content Reviewer",
       company: "Google via Vaco",
       location: "Palo Alto, California",
       period: "03/2020 - 06/2020",
