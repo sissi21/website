@@ -79,7 +79,7 @@ export const cvData: CVData = {
   summary: [
     "Program Manager with a proven track record supporting Google - via Vaco in Palo Alto, CA - on Search Ads Quality and expertise in Google Ads policies. Repeatedly recognized as Best Rater and promoted to Team Captain, leading a 12-person team to drive quality, efficiency, and process improvements.",
     "Upon relocating to Switzerland, earned a Master’s in Data Management & Business Analytics from EDHEC - recognized as the highest-GPA student in the cohort - and completed a high-impact consulting project with Alstom developing a machine-learning prototype for predictive maintenance.",
-    "I have since continued building my project and program management experience through volunteer projects and the Google Project Management Professional Certificate, and I look forward to helping Google once again in delivering its mission."
+    "I have since continued building my project and program management experience through volunteer projects and the Google Project Management Professional Certificate, combining analytical thinking, cross-functional coordination, and structured delivery across international and technical environments."
   ],
   summaryHighlights: [
     {
@@ -91,7 +91,7 @@ export const cvData: CVData = {
     {
       label: "Cost Optimization",
       value: "Up to €5.5M Savings",
-      desc: "Predictive maintenance algorithms with Alstom",
+      desc: "Predictive maintenance business case with Alstom",
       icon: "trending"
     },
     {
